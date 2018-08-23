@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  margin: 0;
+  letter-spacing: .0625em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Topbar */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  background-color: #a0bed0;
+  width: 100%;
+  padding: 5px 95px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+  z-index:999;
+}
+.menu {
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 880px;
+  display: flex;
+}
+.menu__item {
+  display:inline;
+  list-style:none;
+  margin-right: 25px;
+}
+.menu__item:hover {
+  color: rgba(255,255,255,.75);
+}
+.nav__mobile{
+  display: none;
+}
+/* HEADER - APRESENTAÇÃO */
+.apresentacao {
+  background-image:linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/foto-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  text-align: center;
+  margin-top: 64px; /*Dar uma olhada */
+}
+.apresentacao__titulo {
+  text-transform: uppercase;
+  color:  rgba(255,255,255,.5);
+  font-size: 95px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 105px;
+  font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+  margin-bottom: -28px;
+}
+.apresentacao__subtitulo {
+  font-size: 20px;
+  font-weight: lighter;
+  width:40%;
+  color: rgba(255,255,255,.5);
+  padding-top: 20px;
+  margin: 0 auto 40px;
+}
+.btn {
+  box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1);
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border-radius: 5px;
+}
+.btn-informacao {
+  background-color: #829dad;
+  background-position: center;
+}
+/* SOBRE */
+.sobre{
+background-color: #161616;
+margin-top: -20px;
+background-size: 30px;
+border-bottom-width: 1px;
+margin-top: -20px;
+text-align: center;
+background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+padding-bottom: 40px;
+}
+.sobre__titulo {
+padding-top: 40px;
+color: #fff;
+}
+.sobre__texto{
+  font-size: 15px;
+  width: 62%;
+  padding-top: 0px;
+  margin: 0 auto 40px;
+  color: rgba(255,255,255,.75);
+  font-weight: lighter;
+}
+/* PROJETOS */
+.escala-img {
+  filter: grayscale(5%);
+  
+}
+.img-fluid {
+  width: 50%;
+  height: auto;
+  margin: 70px auto auto 80px;
+}
+
+
+/* MAPA */
+
+/* CONTATO */
+
+/* FOOTER */
+
+/* RESPONSIVO */
+@media (max-width:420px){
+  .menu__item{
+    display: none;
+  }
+  .nav__mobile{
+    display: block;
+  }
+
+}
+@media (max-width: 960px){
+  .container{
+    width:100%;
+    margin: 0 4%;
+  }
+}
