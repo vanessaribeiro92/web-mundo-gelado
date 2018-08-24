@@ -8,40 +8,52 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
 </head>
+
 <body>
   <!--Topbar-->
   <nav class="topbar">
-    <div class="container"></div>
-    <ul class="menu">
-      <li class="menu__item">
-        <a href="#">Sobre</a>
-      </li>
-      <li class="menu__item">
-        <a href="#">Destino</a>
-      </li>
-      <li class="menu__item">
-        <a href="#">Contato</a>
-      </li>
-      <img src="img/menu-hamburguer.png" alt="Menu mobile" class="nav__mobile">
-    </ul>
+    <div class="container">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#">Sobre</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Destino</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Contato</a>
+        </li>
+        <img class="nav__mobile" src="img/menu-hamburguer.png" alt="Menu mobile" >
+      </ul>
+    </div>
   </nav>
   <!--Header - Apresentação Inicial -->
-  <header class="apresentacao">
+  <header class="apresentacao transition">
     <h1 class="apresentacao__titulo">Mundo Gelado</h1>
     <h4 class="apresentacao__subtitulo">A agência de viagens que te leva aos lugares mais congelantes do planeta</h4>
     <a href="btn-informacao" class="btn btn-informacao">Quero saber mais</a>
   </header>
   <!-- About Section - Tela 1 -->
   <section class="sobre">
-    <h3 class="sobre__titulo">A agência Mundo Gelado</h3>
-    <h4 class="sobre__texto">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta, com conforto e segurança. 
-    Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
-    Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</h4>
+    <div class="container">
+      <h2 class="sobre__titulo">A agência Mundo Gelado</h2>
+      <h4 class="sobre__texto">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta,
+        com conforto e segurança.<br> Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
+        <br> Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</h4>
+    </div>
   </section>
   <!-- Project Section - Tela 2 -->
   <section class="projeto">
-    <div class="projeto-siberia">
-      <img class="img-fluid escala-img " src="img/siberia-1.jpg" alt="">
+    <div class="container">
+      <div class="projeto-siberia">
+        <div class="foto-siberia1">
+          <img class="img-fluid escala-img " src="img/siberia-1.jpg" alt="">
+        </div>
+        <div class="projeto-siberia-texto">
+          <h1>Sibéria</h1>
+          <p class="texto-siberia"> O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon. </p>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Sigup Section - Tela 3  -->
